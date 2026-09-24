@@ -1,0 +1,58 @@
+{
+  "_meta": {
+    "title": "Microsoft Defender Antivirus — lab template",
+    "author": "Shadman Bari",
+    "purpose": "Reference shape for recreating an Intune Endpoint security Antivirus profile or Settings Catalog entries. Not an exported Intune policy. No tenant identifiers.",
+    "recreate_in": "Intune admin center → Endpoint security → Antivirus → Create Policy → Microsoft Defender Antivirus",
+    "safety": "Lab / trial only. Pilot before broad assignment."
+  },
+  "platform": "windows",
+  "profileType": "MicrosoftDefenderAntivirus",
+  "settings": [
+    {
+      "name": "AllowRealtimeMonitoring",
+      "displayHint": "Allow Real-time Monitoring",
+      "value": "allowed",
+      "rationale": "On-access scanning for deskside malware stop-loss"
+    },
+    {
+      "name": "AllowCloudProtection",
+      "displayHint": "Allow Cloud Protection",
+      "value": "allowed",
+      "rationale": "Cloud-delivered / MAPS lookups for emerging threats"
+    },
+    {
+      "name": "CloudBlockLevel",
+      "displayHint": "Cloud Block Level",
+      "value": "high",
+      "rationale": "Lab starting point; raise after false-positive review"
+    },
+    {
+      "name": "PUAProtection",
+      "displayHint": "Potentially Unwanted App protection",
+      "value": "enabled",
+      "rationale": "Cuts adware/toolbar tickets; use Audit first if software inventory is messy"
+    },
+    {
+      "name": "AllowBehaviorMonitoring",
+      "displayHint": "Allow Behavior Monitoring",
+      "value": "allowed",
+      "rationale": "Behavioral signals beyond static signatures"
+    },
+    {
+      "name": "AllowIOAVProtection",
+      "displayHint": "Allow on-access / IOAV protection",
+      "value": "allowed",
+      "rationale": "Scan downloaded files and attachments where supported"
+    },
+    {
+      "name": "SubmitSamplesConsent",
+      "displayHint": "Submit Samples Consent",
+      "value": "sendSafeSamplesAutomatically",
+      "rationale": "Improves cloud protection; avoid SendAllSamples on tightly regulated labs without review"
+    }
+  ],
+  "assignment": {
+    "note": "Assign only to a lab pilot Entra group. Do not embed real group object IDs in this file."
+  }
+}
