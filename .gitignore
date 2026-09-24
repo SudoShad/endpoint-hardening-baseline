@@ -1,0 +1,30 @@
+# Local / OS
+.DS_Store
+Thumbs.db
+desktop.ini
+*.swp
+*~
+
+# Editor / IDE
+.vscode/
+.idea/
+*.code-workspace
+
+# Secrets and local env — never commit
+.env
+.env.*
+*.pfx
+*.pem
+*.key
+secrets/
+credentials/
+
+# Real exports from a live tenant (keep samples only)
+exports/
+*.tenant.json
+*-export.json
+
+# Local notes / scratch
+scratch/
+tmp/
+*.local.md
