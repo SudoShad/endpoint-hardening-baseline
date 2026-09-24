@@ -1,0 +1,15 @@
+Control,Check,Expected,LabResult,Notes
+Defender,Real-time protection,Enabled,,EXAMPLE row only — fill on lab VM
+Defender,Cloud-delivered protection,Enabled,,EXAMPLE
+Defender,PUA protection,Enabled or Audit,,EXAMPLE
+Firewall,Domain profile,Enabled,,EXAMPLE
+Firewall,Private profile,Enabled,,EXAMPLE
+Firewall,Public profile,Enabled,,EXAMPLE
+BitLocker,OS volume protection,On,,EXAMPLE — confirm Entra recovery key visible
+BitLocker,Recovery key in Entra,Yes,,EXAMPLE — never paste key here
+LAPS,BackupDirectory,Entra (1),,EXAMPLE
+LAPS,Password retrievable in Entra,Yes,,EXAMPLE — do not store password in this CSV
+Update ring,Quality deferral days,7,,EXAMPLE — match your documented choice
+Update ring,Feature deferral days,30,,EXAMPLE
+Local admin,Daily user is standard,Yes,,EXAMPLE
+UAC,EnableLUA,1,,EXAMPLE
