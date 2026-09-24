@@ -2,7 +2,7 @@
 
 **Author:** Shadman Bari · [shadman.io](https://shadman.io) · [LinkedIn](https://linkedin.com/in/shadman-bari) · shadman@shadman.io  
 **Focus:** Desktop Support / IT Support / Jr Sysadmin — Windows endpoint hardening as **documented Intune / policy-as-code**  
-**Companions:** [helpdesk-graph-toolkit](https://github.com/SudoShad/helpdesk-graph-toolkit) · [linux-homelab](https://github.com/SudoShad/linux-homelab) · [linux-ops-toolkit](https://github.com/SudoShad/linux-ops-toolkit) · [ad-intune-mini-tenant](https://github.com/SudoShad/ad-intune-mini-tenant) *(PARKED)*
+**Companions:** [helpdesk-graph-toolkit](https://github.com/SudoShad/helpdesk-graph-toolkit) · [monitoring-breakglass-ops](https://github.com/SudoShad/monitoring-breakglass-ops) · [linux-homelab](https://github.com/SudoShad/linux-homelab) · [linux-ops-toolkit](https://github.com/SudoShad/linux-ops-toolkit) · [ad-intune-mini-tenant](https://github.com/SudoShad/ad-intune-mini-tenant) *(PARKED)*
 
 CIS-inspired Windows endpoint hardening expressed as Intune Settings Catalog / Endpoint security documentation, markdown settings tables, and sample JSON / OMA-URI **templates**. No live tenant is required to read or interview from this repo.
 
@@ -92,6 +92,7 @@ Full rationale: [`docs/BASELINE.md`](docs/BASELINE.md).
 | Repo | Role |
 |------|------|
 | [helpdesk-graph-toolkit](https://github.com/SudoShad/helpdesk-graph-toolkit) | PowerShell + Graph helpdesk automation (BitLocker key lookup, stale devices, password reset) |
+| [monitoring-breakglass-ops](https://github.com/SudoShad/monitoring-breakglass-ops) | Monitoring alert triage + break-glass / emergency access patterns |
 | [linux-homelab](https://github.com/SudoShad/linux-homelab) | Proxmox + AD/GPO + WireGuard + osTicket + Wazuh |
 | [linux-ops-toolkit](https://github.com/SudoShad/linux-ops-toolkit) | POSIX `sh` backup / SSH guard / health check |
 | [ad-intune-mini-tenant](https://github.com/SudoShad/ad-intune-mini-tenant) | Entra + Intune enroll lab — **PARKED** |
